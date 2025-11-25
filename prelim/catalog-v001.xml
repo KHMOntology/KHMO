@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1722906557749" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="freestyle.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1722906557749" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="butterfly.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1722906557749" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="leg-lifts.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1722906557749" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="sidestroke.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1722906557749" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="flutter-kicking.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1722906557749" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="treading-water.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1722906557749" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="deepwater-running.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1722906557749" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="backstroke.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1722906557749" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="breaststroke.owl"/>
+    </group>
+</catalog>

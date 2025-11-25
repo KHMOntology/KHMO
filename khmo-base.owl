@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://w3id.org/khmo#"
+     xml:base="http://w3id.org/khmo"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:fma="http://purl.org/sig/ont/fma/"
+     xmlns:nbo="http://purl.obolibrary.org/obo/nbo.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:chebi="http://purl.obolibrary.org/obo/chebi/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
+    <owl:Ontology rdf:about="http://w3id.org/khmo">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/ProfTuan/KHMO/main/fma%20workspace/fma_khmo.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/ProfTuan/KHMO/main/nbo%20workspace/nbo_khmo.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/ProfTuan/KHMO/main/obi%20workspace/obi_khmo.owl"/>
+        <dc:creator>Eloisa Nguyen</dc:creator>
+        <dc:creator>Tuan Amith</dc:creator>
+        <dc:title>Kinentic Human Movement Ontology (KHMO)</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://schema.org/image -->
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/image"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NBO_0000001 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NBO_0000001">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002418"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/khmo#KHMO_00000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000061 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000061">
+        <owl:equivalentClass rdf:resource="http://purl.org/sig/ont/fma/fma305751"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001062 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0001062">
+        <owl:equivalentClass rdf:resource="http://purl.org/sig/ont/fma/fma62955"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0034925 -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0034925">
+        <owl:equivalentClass rdf:resource="http://purl.org/sig/ont/fma/fma55652"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma62955 -->
+
+    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma62955">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000056"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/khmo#KHMO_00000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002327"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NBO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma85817 -->
+
+    <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma85817">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000001"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/khmo#KHMO_00000001 -->
+
+    <owl:Class rdf:about="http://w3id.org/khmo#KHMO_00000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000339"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/khmo#KHMO_00000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002230"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/khmo#KHMO_00000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:definition>A composite of various integrated human anatomical parts contributing to human movement.</fma:definition>
+        <rdfs:label xml:lang="en">human kinetic coordinated movement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/khmo#KHMO_00000002 -->
+
+    <owl:Class rdf:about="http://w3id.org/khmo#KHMO_00000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NBO_0000355"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/khmo#KHMO_00000002"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:definition>A posture expressed specifically by a human being</fma:definition>
+        <rdfs:label xml:lang="en">human stance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/khmo#KHMO_00000003 -->
+
+    <owl:Class rdf:about="http://w3id.org/khmo#KHMO_00000003">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/khmo#KHMO_00000002"/>
+        <fma:definition>A physical posture defining a starting point of a human-based movement</fma:definition>
+        <rdfs:label xml:lang="en">initial human stance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/khmo#KHMO_00000004 -->
+
+    <owl:Class rdf:about="http://w3id.org/khmo#KHMO_00000004">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/khmo#KHMO_00000002"/>
+        <fma:definition>A human posture that expresses the end goal of a human-based movement</fma:definition>
+        <rdfs:label xml:lang="en">realized human stance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/khmo#KHMO_00000005 -->
+
+    <owl:Class rdf:about="http://w3id.org/khmo#KHMO_00000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002018"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/khmo#KHMO_00000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Physical_activity</obo:IAO_0000119>
+        <fma:definition>&quot;defined as any voluntary bodily movement produced by skeletal muscles that requires energy expenditure. Physical activity encompasses all activities, at any intensity, performed during any time of day or night. It includes both voluntary exercise and incidental activity integrated into the daily routine&quot;</fma:definition>
+        <rdfs:label xml:lang="en">planned physical activity</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

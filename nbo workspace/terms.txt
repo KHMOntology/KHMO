@@ -1,0 +1,11 @@
+http://purl.obolibrary.org/obo/RO_0002224 #starts with
+http://purl.obolibrary.org/obo/BFO_0000063 #precedes
+http://purl.obolibrary.org/obo/RO_0002230 #end with
+http://purl.obolibrary.org/obo/RO_0002018 #has component process
+http://purl.obolibrary.org/obo/NBO_0000339 #motor coordination
+http://purl.obolibrary.org/obo/NBO_0000355 #posture
+http://purl.obolibrary.org/obo/BFO_0000050 #part of
+http://purl.obolibrary.org/obo/RO_0002331 #involved in
+http://purl.obolibrary.org/obo/UBERON_0034925 #anatomical collection
+http://purl.obolibrary.org/obo/UBERON_0000061 #anatomical structure
+http://purl.obolibrary.org/obo/NBO_0000001 #body part movement

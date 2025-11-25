@@ -1,0 +1,7 @@
+robot extract --method STAR -i "nbo.owl" -T "terms.txt" --intermediates none --copy-ontology-annotations true --imports include -o nbo_star_extract.owl -vv
+
+
+robot extract --method MIREOT -i "nbo.owl" -L "terms.txt" -u "http://www.w3.org/2002/07/owl#Thing" --intermediates all --copy-ontology-annotations true --imports include -o nbo_mireot_extract.owl -vv
+
+
+robot merge --inputs "*_extract.owl" -o nbo_khmo.owl --include-annotations true

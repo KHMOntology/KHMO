@@ -1,0 +1,37 @@
+http://purl.org/sig/ont/fma/fma24920 #palm
+http://purl.org/sig/ont/fma/fma24977 #right knee
+http://purl.org/sig/ont/fma/fma24903 #left elbow  
+http://purl.org/sig/ont/fma/fma24964 #hip 
+http://purl.org/sig/ont/fma/fma11345 #right forearm
+http://purl.org/sig/ont/fma/fma7154 #head 
+http://purl.org/sig/ont/fma/fma24986 #posterior part of right leg
+http://purl.org/sig/ont/fma/fma33642 #right shoulder
+http://purl.org/sig/ont/fma/fma24971 #left ankle
+http://purl.org/sig/ont/fma/fma24896 #left arm
+http://purl.org/sig/ont/fma/fma24902 #right elbow
+http://purl.org/sig/ont/fma/fma25202 #shoulder
+http://purl.org/sig/ont/fma/fma24920 #plam
+http://purl.org/sig/ont/fma/fma24890 #arm
+http://purl.org/sig/ont/fma/fma24981 #left leg
+http://purl.org/sig/ont/fma/fma24970 #right ankle
+http://purl.org/sig/ont/fma/fma24940 #right wrist
+http://purl.org/sig/ont/fma/fma50060 #chest
+http://purl.org/sig/ont/fma/fma24966 #left hip
+http://purl.org/sig/ont/fma/fma24978 #left knee
+http://purl.org/sig/ont/fma/fma268890 #set of legs
+http://purl.org/sig/ont/fma/fma61070 #right palm
+http://purl.org/sig/ont/fma/fma24965 #right hip
+http://purl.org/sig/ont/fma/fma24980 #right leg
+http://purl.org/sig/ont/fma/fma61071 #left palm
+http://purl.org/sig/ont/fma/fma24978 #left foot
+http://purl.org/sig/ont/fma/fma24974 #knee
+http://purl.org/sig/ont/fma/fma268884 #set of arms
+http://purl.org/sig/ont/fma/fma11346 #left forearm
+http://purl.org/sig/ont/fma/fma24895 #right arm
+http://purl.org/sig/ont/fma/fma228775 #waist
+http://purl.org/sig/ont/fma/fma24890 #arms
+http://purl.org/sig/ont/fma/fma9663 #forearm
+http://purl.org/sig/ont/fma/fma61070 #right plam
+http://purl.org/sig/ont/fma/fma9714 #left hand
+http://purl.org/sig/ont/fma/fma11343 #right foot
+http://purl.org/sig/ont/fma/fma9713 #right hand

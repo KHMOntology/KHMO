@@ -1,0 +1,3169 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/sig/ont/fma.owl#"
+     xml:base="http://purl.org/sig/ont/fma.owl"
+     xmlns:fma="http://purl.org/sig/ont/fma/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/sig/ont/fma.owl">
+        <owl:versionIRI rdf:resource="http://purl.org/sig/ont/fma_5.0.0.owl"/>
+        <fma:contributing_author>Augusto V. Agoncillo MD</fma:contributing_author>
+        <fma:contributing_author>Richard Martin PhD</fma:contributing_author>
+        <fma:contributing_author>Salvacion Quimosing MD</fma:contributing_author>
+        <fma:creator>Cornelius Rosse, MD DSc</fma:creator>
+        <fma:primary_author_and_curator>Jose Leonardo V. Mejino Jr. MD</fma:primary_author_and_curator>
+        <fma:technical_support>James F Brinkley MD PhD
+Linda Shapiro PhD
+Landon T Detwiler MS
+Kurt Rickard PhD
+</fma:technical_support>
+        <rdfs:comment>The Foundational Model of Anatomy Ontology (FMA) is a project of the Structural Informatics Group from the Department of Biological Structure at the University of Washington (UW) School of Medicine. The FMA is an intellectual property of the University of Washington. The FMA is a reference ontology for the domain of human anatomy.</rdfs:comment>
+        <rdfs:comment>Object properties migrated from frames version retained the previously assigned FMAIDs. Newly introduced object properties post OWL-translation are no longer assigned FMAIDs.</rdfs:comment>
+        <owl:versionInfo>5.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/Date_entered_modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/Date_entered_modified"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/English_equivalent -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/English_equivalent"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/FMAID -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/FMAID">
+        <fma:FMAID>85821</fma:FMAID>
+        <rdfs:label xml:lang="en">FMAID</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/TA_ID -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/TA_ID"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/author -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/author"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/authority -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/authority"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/contributing_author -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/contributing_author"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/creator"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/definition">
+        <fma:FMAID>85829</fma:FMAID>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/language"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/modification -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/modification"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/modified_by -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/modified_by"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/non-English_equivalent -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/non-English_equivalent">
+        <fma:FMAID>85943</fma:FMAID>
+        <rdfs:label xml:lang="en">non-English equivalent</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/preferred_name -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/preferred_name">
+        <fma:FMAID>85819</fma:FMAID>
+        <rdfs:label xml:lang="en">preferred name</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/primary_author_and_curator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/primary_author_and_curator"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/synonym">
+        <fma:FMAID>85820</fma:FMAID>
+        <rdfs:label xml:lang="en">synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/technical_support -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/technical_support"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/term_status -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
+        <rdfs:label xml:lang="en">comment</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label xml:lang="en">label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma0329023 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma0329023">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma25054"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">329023</fma:FMAID>
+        <fma:definition>subdivision of trunk, each instance of which is a regional part of front of trunk; together with the meronymic sum of subdivisions of trunk constitute the trunk. Examples: thorax, abdomen, pelvis.
+</fma:definition>
+        <fma:preferred_name>Subdivision of front of trunk</fma:preferred_name>
+        <rdfs:label xml:lang="en">Subdivision of front of trunk</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma0329033 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma0329033">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24876"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">329033</fma:FMAID>
+        <fma:preferred_name>Distal free upper limb region</fma:preferred_name>
+        <fma:synonym>Distal region of free upper limb</fma:synonym>
+        <rdfs:label xml:lang="en">Distal free upper limb region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma0329037 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma0329037">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24877"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">329037</fma:FMAID>
+        <fma:preferred_name>Middle free lower limb region</fma:preferred_name>
+        <fma:synonym>Middle region of free lower limb</fma:synonym>
+        <rdfs:label xml:lang="en">Middle free lower limb region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma0329072 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma0329072">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24876"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">329072</fma:FMAID>
+        <fma:preferred_name>Middle free upper limb region</fma:preferred_name>
+        <fma:synonym>Middle region of free upper limb</fma:synonym>
+        <rdfs:label xml:lang="en">Middle free upper limb region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma0329094 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma0329094">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24877"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">329094</fma:FMAID>
+        <fma:preferred_name>Distal free lower limb region</fma:preferred_name>
+        <fma:synonym>Distal region of free lower limb</fma:synonym>
+        <rdfs:label xml:lang="en">Distal free lower limb region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma0329102 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma0329102">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24876"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">329102</fma:FMAID>
+        <fma:preferred_name>Proximal free upper limb region</fma:preferred_name>
+        <fma:synonym>Proximal region of free upper limb</fma:synonym>
+        <rdfs:label xml:lang="en">Proximal free upper limb region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma11343 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma11343">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma9664"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11343</fma:FMAID>
+        <fma:preferred_name>Right foot</fma:preferred_name>
+        <rdfs:label xml:lang="en">Right foot</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma11343"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right foot</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:35 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 16:28:51 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma11345 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma11345">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11345</fma:FMAID>
+        <fma:non-English_equivalent>Rechter Unterarm</fma:non-English_equivalent>
+        <fma:preferred_name>Right forearm</fma:preferred_name>
+        <fma:synonym>Right antebrachial region</fma:synonym>
+        <rdfs:label xml:lang="en">Right forearm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma11345"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Rechter Unterarm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:48:38 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma11345"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right forearm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:35 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 14:30:40 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma11345"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Right antebrachial region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:35 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Mar 24 16:19:53 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma11346 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma11346">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11346</fma:FMAID>
+        <fma:non-English_equivalent>Linker Unterarm</fma:non-English_equivalent>
+        <fma:preferred_name>Left forearm</fma:preferred_name>
+        <fma:synonym>Left antebrachial region</fma:synonym>
+        <rdfs:label xml:lang="en">Left forearm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma11346"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Linker Unterarm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:48:51 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma11346"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Left forearm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:35 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 14:30:51 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma11346"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Left antebrachial region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:35 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Mar 24 16:20:04 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma20358 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma20358">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma0329023"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20358</fma:FMAID>
+        <fma:preferred_name>Subdivision of thorax</fma:preferred_name>
+        <fma:synonym>Thoracic region</fma:synonym>
+        <fma:synonym>Thoracic subdivision</fma:synonym>
+        <rdfs:label xml:lang="en">Subdivision of thorax</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma20358"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Thoracic subdivision</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:33 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma20358"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Subdivision of thorax</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:45 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Tue Dec 08 14:06:46 PST 1998</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma20358"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Thoracic region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:17 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma228775 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma228775">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma25054"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">228775</fma:FMAID>
+        <fma:non-English_equivalent>Balakang</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Cintura</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Taille</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Vita</fma:non-English_equivalent>
+        <fma:preferred_name>Waist</fma:preferred_name>
+        <rdfs:label xml:lang="en">Waist</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma228775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Balakang</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 16:29:28 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Filipino</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma228775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Cintura</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 16:29:21 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma228775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Taille</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 16:28:51 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma228775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Vita</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 16:29:06 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Italian</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma228775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Waist</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 16:28:21 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma231430 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma231430">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma67504"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">231430</fma:FMAID>
+        <fma:definition>subdivision of cardinal body part, each instance of which is a regional part of body proper. Examples: front of body proper, neck, trunk, pudendum, back of thorax.
+</fma:definition>
+        <fma:preferred_name>Subdivision of body proper</fma:preferred_name>
+        <rdfs:label xml:lang="en">Subdivision of body proper</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma231430"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Subdivision of body proper</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Jun 24 15:29:00 PDT 2005</fma:Date_entered_modified>
+        <fma:author>onard</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma241863 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma241863">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma9661"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">241863</fma:FMAID>
+        <fma:preferred_name>Free limb region</fma:preferred_name>
+        <fma:synonym>Free limb segment</fma:synonym>
+        <rdfs:label xml:lang="en">Free limb region</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma241863"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Free limb region</owl:annotatedTarget>
+        <fma:author>onard</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma241863"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Free limb segment</owl:annotatedTarget>
+        <fma:Date_entered_modified>Mon Nov 28 16:55:29 PST 2005</fma:Date_entered_modified>
+        <fma:author>onard</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24876 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24876">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma241863"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24876</fma:FMAID>
+        <fma:preferred_name>Free upper limb region</fma:preferred_name>
+        <fma:synonym>Free upper limb segment</fma:synonym>
+        <fma:synonym>Free upper limb subdivision</fma:synonym>
+        <fma:synonym>Segment of free upper limb</fma:synonym>
+        <fma:synonym>Subdivision of free upper limb</fma:synonym>
+        <rdfs:label xml:lang="en">Free upper limb region</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24876"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Free upper limb region</owl:annotatedTarget>
+        <fma:author>onard</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24876"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Free upper limb segment</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Feb 25 15:45:06 PST 2005</fma:Date_entered_modified>
+        <fma:author>AUGUSTO V. AGONCILLO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24876"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Free upper limb subdivision</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:33 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24876"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Segment of free upper limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue May 27 17:15:17 PDT 2003</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24876"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Subdivision of free upper limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Tue Mar 30 13:01:38 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24877 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24877">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma241863"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24877</fma:FMAID>
+        <fma:preferred_name>Free lower limb region</fma:preferred_name>
+        <fma:synonym>Free lower limb segment</fma:synonym>
+        <fma:synonym>Free lower limb subdivision</fma:synonym>
+        <fma:synonym>Segment of free lower limb</fma:synonym>
+        <fma:synonym>Subdivision of free lower limb</fma:synonym>
+        <rdfs:label xml:lang="en">Free lower limb region</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24877"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Free lower limb region</owl:annotatedTarget>
+        <fma:author>onard</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24877"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Free lower limb segment</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Feb 25 15:45:27 PST 2005</fma:Date_entered_modified>
+        <fma:author>AUGUSTO V. AGONCILLO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24877"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Free lower limb subdivision</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:33 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24877"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Segment of free lower limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue May 27 17:17:56 PDT 2003</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24877"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Subdivision of free lower limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Tue Mar 30 13:20:57 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24890 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24890">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma0329102"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24890</fma:FMAID>
+        <fma:non-English_equivalent>Brachium</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Bras</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Braso</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Brazo</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Regio brachialis</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Région brachiale</fma:non-English_equivalent>
+        <fma:preferred_name>Arm</fma:preferred_name>
+        <fma:synonym>Brachial region</fma:synonym>
+        <fma:synonym>Proximal segment of free upper limb</fma:synonym>
+        <rdfs:label xml:lang="en">Arm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Brachium</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Arm</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.022</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Bras</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Braso</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 16:06:12 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Filipino</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Brazo</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 16:04:02 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Regio brachialis</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Brachial region</fma:English_equivalent>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Région brachiale</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Arm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.022</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Thu Mar 25 10:15:56 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Brachial region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Proximal segment of free upper limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue May 27 17:10:57 PDT 2003</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24895 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24895">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24895</fma:FMAID>
+        <fma:preferred_name>Right arm</fma:preferred_name>
+        <fma:synonym>Right brachial region</fma:synonym>
+        <rdfs:label xml:lang="en">Right arm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24895"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right arm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Mar 24 16:09:43 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24895"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Right brachial region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24896 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24896">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24890"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24896</fma:FMAID>
+        <fma:preferred_name>Left arm</fma:preferred_name>
+        <fma:synonym>Left brachial region</fma:synonym>
+        <rdfs:label xml:lang="en">Left arm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24896"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Left arm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Mar 24 16:09:50 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24896"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Left brachial region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24901 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24901">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24876"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24901</fma:FMAID>
+        <fma:non-English_equivalent>Codo</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Coude</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Cubitus</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Siko</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Winkelstück</fma:non-English_equivalent>
+        <fma:preferred_name>Elbow</fma:preferred_name>
+        <fma:synonym>Cubital region</fma:synonym>
+        <rdfs:label xml:lang="en">Elbow</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24901"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Codo</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 16:07:40 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24901"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Coude</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24901"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Cubitus</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Elbow</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.023</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24901"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Siko</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 15:59:35 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Filipino</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24901"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Winkelstück</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:50:12 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24901"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Elbow</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.023</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Wed Mar 24 16:13:39 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24901"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Cubital region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24902 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24902">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24901"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24902</fma:FMAID>
+        <fma:preferred_name>Right elbow</fma:preferred_name>
+        <fma:synonym>Right cubital region</fma:synonym>
+        <rdfs:label xml:lang="en">Right elbow</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24902"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right elbow</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Mar 24 16:14:47 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24902"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Right cubital region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Mar 24 16:14:52 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24903 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24903">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24901"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24903</fma:FMAID>
+        <fma:preferred_name>Left elbow</fma:preferred_name>
+        <fma:synonym>Left cubital region</fma:synonym>
+        <rdfs:label xml:lang="en">Left elbow</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24903"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Left elbow</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Mar 24 16:14:59 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24903"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Left cubital region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Mar 24 16:15:03 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24920 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24920">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24945"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24920</fma:FMAID>
+        <fma:non-English_equivalent>Palad</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Palma</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Palme</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Paume</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Vola</fma:non-English_equivalent>
+        <fma:preferred_name>Palm</fma:preferred_name>
+        <fma:synonym>Front of hand</fma:synonym>
+        <fma:synonym>Palm of hand proper</fma:synonym>
+        <fma:synonym>Palmar region of hand proper</fma:synonym>
+        <rdfs:label xml:lang="en">Palm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Palad</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 15:59:50 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Filipino</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Palma</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Sep 07 14:56:20 PDT 2004</fma:Date_entered_modified>
+        <fma:English_equivalent>Palm</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.028</fma:TA_ID>
+        <fma:TA_ID>A01.2.07.022</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Palme</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:51:44 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Paume</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Vola</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Palm</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.028</fma:TA_ID>
+        <fma:TA_ID>A01.2.07.022</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Palm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Jan 28 14:38:21 PST 2003</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.028</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>English</fma:language>
+        <fma:modification>Thu Mar 25 14:27:56 PST 1999</fma:modification>
+        <fma:modified_by>Mejino MD</fma:modified_by>
+        <fma:term_status>Legitimate</fma:term_status>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Front of hand</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Oct 01 15:42:36 PDT 2002</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 14:27:57 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Palm of hand proper</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Feb 15 14:40:01 PST 2005</fma:Date_entered_modified>
+        <fma:author>AUGUSTO V. AGONCILLO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Palmar region of hand proper</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed Sep 08 10:39:24 PDT 2004</fma:Date_entered_modified>
+        <fma:TA_ID>A01.2.07.022</fma:TA_ID>
+        <fma:author>AUGUSTO V. AGONCILLO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24922 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24922">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24876"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24922</fma:FMAID>
+        <fma:non-English_equivalent>Carpus</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Handgelenk</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Muñeca</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Polso</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Regio carpalis</fma:non-English_equivalent>
+        <fma:preferred_name>Wrist</fma:preferred_name>
+        <fma:synonym>Carpal region</fma:synonym>
+        <rdfs:label xml:lang="en">Wrist</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24922"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Carpus</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Wrist</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.026</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Stedman&apos;s Electronic Medical Dictionary</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24922"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Handgelenk</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:51:26 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24922"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Muñeca</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 16:09:24 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24922"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Polso</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 15:47:38 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Italian</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24922"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Regio carpalis</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Carpal region</fma:English_equivalent>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24922"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Wrist</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.026</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Thu Mar 25 14:29:45 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24922"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Carpal region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Sep 07 15:19:15 PDT 2004</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24940 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24940">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24922"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24940</fma:FMAID>
+        <fma:preferred_name>Right wrist</fma:preferred_name>
+        <rdfs:label xml:lang="en">Right wrist</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24940"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right wrist</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 14:37:32 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24945 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24945">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma0329033"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24945</fma:FMAID>
+        <fma:non-English_equivalent>Région de la main</fma:non-English_equivalent>
+        <fma:preferred_name>Region of hand</fma:preferred_name>
+        <fma:synonym>Hand region</fma:synonym>
+        <fma:synonym>Hand subdivision</fma:synonym>
+        <fma:synonym>Segment of hand</fma:synonym>
+        <fma:synonym>Subdivision of hand</fma:synonym>
+        <rdfs:label xml:lang="en">Region of hand</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24945"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Région de la main</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24945"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Region of hand</owl:annotatedTarget>
+        <fma:author>onard</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24945"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Hand region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24945"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Hand subdivision</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:33 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24945"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Segment of hand</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Apr 19 11:37:05 PDT 2007</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24945"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Subdivision of hand</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 14:41:22 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24964 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24964">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma9661"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24964</fma:FMAID>
+        <fma:definition>Limb region, each instance of which has as its regional parts pelvicl girdle region of hip and proximal part of thigh.</fma:definition>
+        <fma:non-English_equivalent>Coxa</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Hanche</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Région de la hanche</fma:non-English_equivalent>
+        <fma:preferred_name>Hip</fma:preferred_name>
+        <fma:synonym>Hip region</fma:synonym>
+        <fma:synonym>Regio coxae</fma:synonym>
+        <rdfs:label xml:lang="en">Hip</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24964"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Coxa</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Hip</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.034</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+        <fma:modification>Thu Mar 25 15:42:53 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24964"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Hanche</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24964"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Région de la hanche</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24964"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Hip</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.034</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Thu Mar 25 15:42:03 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24964"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Hip region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 15:43:01 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24964"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Regio coxae</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Thu Mar 25 15:43:29 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24965 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24965">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24964"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24965</fma:FMAID>
+        <fma:preferred_name>Right hip</fma:preferred_name>
+        <fma:synonym>Right hip region</fma:synonym>
+        <rdfs:label xml:lang="en">Right hip</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24965"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right hip</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 15:43:36 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24965"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Right hip region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24966 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24966">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24964"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24966</fma:FMAID>
+        <fma:preferred_name>Left hip</fma:preferred_name>
+        <fma:synonym>Left hip region</fma:synonym>
+        <rdfs:label xml:lang="en">Left hip</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24966"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Left hip</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 15:43:44 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24966"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Left hip region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24970 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24970">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma9665"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24970</fma:FMAID>
+        <fma:preferred_name>Right ankle</fma:preferred_name>
+        <fma:synonym>Right ankle region</fma:synonym>
+        <rdfs:label xml:lang="en">Right ankle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24970"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right ankle</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 16:21:29 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24970"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Right ankle region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Mon Mar 29 10:09:59 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24971 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24971">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma9665"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24971</fma:FMAID>
+        <fma:preferred_name>Left ankle</fma:preferred_name>
+        <fma:synonym>Left ankle region</fma:synonym>
+        <rdfs:label xml:lang="en">Left ankle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24971"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Left ankle</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 16:21:49 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24971"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Left ankle region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:24 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Mon Mar 29 10:10:12 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24974 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24974">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24877"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24974</fma:FMAID>
+        <fma:non-English_equivalent>Genou</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Genu</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Ginocchio</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Knie</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Rodilla</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Tuhod</fma:non-English_equivalent>
+        <fma:preferred_name>Knee</fma:preferred_name>
+        <rdfs:label xml:lang="en">Knee</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24974"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Genou</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24974"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Genu</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Knee</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.036</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+        <fma:modification>Thu Mar 25 15:52:27 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24974"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Ginocchio</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 15:48:40 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Italian</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24974"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Knie</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:52:43 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24974"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Rodilla</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 16:13:22 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24974"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Tuhod</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 16:00:17 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Filipino</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24974"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Knee</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.036</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Thu Mar 25 15:58:01 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24977 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24977">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24974"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24977</fma:FMAID>
+        <fma:preferred_name>Right knee</fma:preferred_name>
+        <rdfs:label xml:lang="en">Right knee</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24977"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right knee</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 15:58:16 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24978 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24978">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24974"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24978</fma:FMAID>
+        <fma:preferred_name>Left knee</fma:preferred_name>
+        <rdfs:label xml:lang="en">Left knee</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24978"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Left knee</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 15:58:23 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24979 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24979">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma0329037"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24979</fma:FMAID>
+        <fma:non-English_equivalent>Bein</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Binti</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Crus</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Jambe</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Pierna</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Pilier</fma:non-English_equivalent>
+        <fma:preferred_name>Leg</fma:preferred_name>
+        <fma:synonym>Intermediate segment of free lower limb</fma:synonym>
+        <rdfs:label xml:lang="en">Leg</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24979"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Binti</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 16:00:43 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Filipino</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24979"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Crus</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Leg</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.038</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24979"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Jambe</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24979"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Pierna</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 16:05:06 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24979"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Pilier</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:35 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24979"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Leg</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.038</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Thu Mar 25 16:11:37 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24979"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Intermediate segment of free lower limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue May 27 17:13:49 PDT 2003</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24979"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Bein</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:49:15 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24980 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24980">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24979"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24980</fma:FMAID>
+        <fma:preferred_name>Right leg</fma:preferred_name>
+        <rdfs:label xml:lang="en">Right leg</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24980"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right leg</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 16:12:09 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24981 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24981">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24979"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24981</fma:FMAID>
+        <fma:preferred_name>Left leg</fma:preferred_name>
+        <rdfs:label xml:lang="en">Left leg</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24981"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Left leg</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 16:12:36 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24984 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24984">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24988"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24984</fma:FMAID>
+        <fma:non-English_equivalent>Hinteres Teil des Beines</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Mollet</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Pieza posterior de la pierna</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Regio cruris posterior</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Regio surae</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Région postérieure de la jambe</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Sura</fma:non-English_equivalent>
+        <fma:preferred_name>Posterior part of leg</fma:preferred_name>
+        <fma:synonym>Calf</fma:synonym>
+        <fma:synonym>Calf of leg</fma:synonym>
+        <fma:synonym>Posterior curral region</fma:synonym>
+        <fma:synonym>Posterior leg region</fma:synonym>
+        <fma:synonym>Posterior region of leg</fma:synonym>
+        <fma:synonym>Sural region</fma:synonym>
+        <rdfs:label xml:lang="en">Posterior part of leg</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Hinteres Teil des Beines</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:55:24 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Mollet</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Pieza posterior de la pierna</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 16:14:40 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Regio cruris posterior</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Posterior leg region</fma:English_equivalent>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Regio surae</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Sural region</fma:English_equivalent>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Région postérieure de la jambe</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Sura</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Calf</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.039</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+        <fma:modification>Thu Mar 25 16:13:58 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Posterior part of leg</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:37 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Calf</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.039</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Thu Mar 25 16:16:23 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Calf of leg</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 16:17:24 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Posterior curral region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:15 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Posterior leg region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Posterior region of leg</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Sural region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:15 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24986 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24986">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24984"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24986</fma:FMAID>
+        <fma:preferred_name>Posterior part of right leg</fma:preferred_name>
+        <fma:synonym>Calf of right leg</fma:synonym>
+        <fma:synonym>Right calf</fma:synonym>
+        <fma:synonym>Right posterior leg region</fma:synonym>
+        <rdfs:label xml:lang="en">Posterior part of right leg</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24986"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Posterior part of right leg</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:37 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24986"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Calf of right leg</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 16:17:45 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24986"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Right calf</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 16:17:31 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24986"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Right posterior leg region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma24988 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma24988">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma0329037"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24988</fma:FMAID>
+        <fma:non-English_equivalent>Regio cruris</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Région de la jambe</fma:non-English_equivalent>
+        <fma:preferred_name>Region of leg</fma:preferred_name>
+        <fma:synonym>Crural region</fma:synonym>
+        <fma:synonym>Leg region</fma:synonym>
+        <fma:synonym>Leg subdivision</fma:synonym>
+        <fma:synonym>Subdivision of leg</fma:synonym>
+        <rdfs:label xml:lang="en">Region of leg</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24988"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Regio cruris</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Leg region</fma:English_equivalent>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24988"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Région de la jambe</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24988"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Region of leg</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Apr 19 13:17:33 PDT 2007</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24988"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Crural region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:15 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24988"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Leg region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24988"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Leg subdivision</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:33 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma24988"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Subdivision of leg</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Mar 25 16:19:12 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma25054 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma25054">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma231430"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25054</fma:FMAID>
+        <fma:preferred_name>Subdivision of trunk</fma:preferred_name>
+        <fma:synonym>Region of trunk</fma:synonym>
+        <fma:synonym>Trunk subdivision</fma:synonym>
+        <rdfs:comment>subdivision of cardinal body part, each instance of which is a regional part of trunk. Examples: back, front of trunk, thorax, abdomen, pelvis.
+</rdfs:comment>
+        <rdfs:label xml:lang="en">Subdivision of trunk</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma25054"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Subdivision of trunk</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Mon Mar 29 10:32:12 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma25054"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Region of trunk</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:17 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma25054"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Trunk subdivision</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:33 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma25202 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma25202">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma9661"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25202</fma:FMAID>
+        <fma:definition>Limb region, each instance of which has as its regional parts pectoral girdle region of shoulder and proximal part of arm.</fma:definition>
+        <fma:preferred_name>Shoulder</fma:preferred_name>
+        <rdfs:label xml:lang="en">Shoulder</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma25202"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Shoulder</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:32:23 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Mon Mar 29 16:15:32 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma268884 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma268884">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma78541"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">268884</fma:FMAID>
+        <fma:preferred_name>Set of arms</fma:preferred_name>
+        <fma:synonym>Pair of arms</fma:synonym>
+        <rdfs:label xml:lang="en">Set of arms</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma268884"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Set of arms</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Jun 26 16:47:59 PDT 2008</fma:Date_entered_modified>
+        <fma:author>Onard</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma268884"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Pair of arms</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Jun 26 16:48:06 PDT 2008</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma268890 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma268890">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma78541"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">268890</fma:FMAID>
+        <fma:preferred_name>Set of legs</fma:preferred_name>
+        <fma:synonym>Pair of legs</fma:synonym>
+        <rdfs:label xml:lang="en">Set of legs</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma268890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Set of legs</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Jun 26 16:49:06 PDT 2008</fma:Date_entered_modified>
+        <fma:author>Onard</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma268890"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Pair of legs</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Jun 26 16:49:11 PDT 2008</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma305751 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma305751">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma67165"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">305751</fma:FMAID>
+        <fma:definition>Material anatomical entity which is generated by coordinated expression of the organism&apos;s own genes that guide its morphogenesis; has inherent 3D shape; its parts are connected and spatially related to one another in patterns determined by coordinated gene expression. Examples: embryo, mesoderm, heart, right ventricle, mitral valve, myocardium, endothelium, lymphocyte, fibroblast, thorax, cardiovascular system, hemoglobin, T cell receptor.</fma:definition>
+        <fma:non-English_equivalent>Anatomische Struktur</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Estructura anatómica</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Structure anatomique</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Struttura anatomica</fma:non-English_equivalent>
+        <fma:preferred_name>Anatomical structure</fma:preferred_name>
+        <fma:synonym>Biological structure</fma:synonym>
+        <rdfs:label xml:lang="en">Anatomical structure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma305751"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Anatomische Struktur</owl:annotatedTarget>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma305751"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Estructura anatómica</owl:annotatedTarget>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma305751"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Structure anatomique</owl:annotatedTarget>
+        <fma:authority>Robert Baud</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma305751"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Struttura anatomica</owl:annotatedTarget>
+        <fma:language>Italian</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma305751"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Anatomical structure</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 26 15:16:32 PDT 2013</fma:Date_entered_modified>
+        <fma:author>Jose Mejino. MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma33642 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma33642">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma25202"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">33642</fma:FMAID>
+        <fma:preferred_name>Right shoulder</fma:preferred_name>
+        <rdfs:label xml:lang="en">Right shoulder</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma33642"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right shoulder</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:31:38 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>AUGUSTO V. AGONCILLO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Jul 07 15:24:47 PDT 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma50060 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma50060">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma20358"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50060</fma:FMAID>
+        <fma:definition>Subdivision of thorax which includes all structures from the skin to the costal pleura. Examples: There is only one chest wall.</fma:definition>
+        <fma:preferred_name>Chest wall</fma:preferred_name>
+        <rdfs:label xml:lang="en">Chest wall</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma50060"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Chest wall</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:30:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Feb 24 16:22:25 PST 2000</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma55652 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma55652">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma67165"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">55652</fma:FMAID>
+        <fma:definition>Material anatomical entity which consists of a maximum number of some instances of discontinuous members of the same class. Examples: set of cranial nerves, ventral branches of aorta, set of mammary arteries, set of thoracic viscera, dentition.</fma:definition>
+        <fma:non-English_equivalent>Anatomischer Satz</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Insieme anatomico</fma:non-English_equivalent>
+        <fma:preferred_name>Anatomical set</fma:preferred_name>
+        <fma:synonym>Set of material anatomical entities</fma:synonym>
+        <rdfs:label xml:lang="en">Anatomical set</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma55652"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Anatomischer Satz</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:19:20 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma55652"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Insieme anatomico</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:21:56 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Italian</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma55652"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Anatomical set</owl:annotatedTarget>
+        <fma:Date_entered_modified>Mon Jun 07 13:58:10 PDT 2004</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Thu Aug 03 14:02:39 PDT 2000</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma55652"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Set of material anatomical entities</owl:annotatedTarget>
+        <fma:author>onard</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma61070 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma61070">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61070</fma:FMAID>
+        <fma:preferred_name>Right palm</fma:preferred_name>
+        <fma:synonym>Palm of right hand</fma:synonym>
+        <rdfs:label xml:lang="en">Right palm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma61070"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right palm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:28:54 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Mon Sep 18 12:18:24 PDT 2000</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma61070"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Palm of right hand</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:28:54 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Mon Sep 18 12:18:58 PDT 2000</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma61071 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma61071">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24920"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61071</fma:FMAID>
+        <fma:preferred_name>Left palm</fma:preferred_name>
+        <fma:synonym>Palm of left hand</fma:synonym>
+        <rdfs:label xml:lang="en">Left palm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma61071"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Left palm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:28:54 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Mon Sep 18 12:18:36 PDT 2000</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma61071"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Palm of left hand</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:28:54 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Mon Sep 18 12:18:48 PDT 2000</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma61775 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma61775">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma62955"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">61775</fma:FMAID>
+        <fma:definition>Anatomical entity, each instance of which has three or fewer spatial dimensions. Examples: hemoglobin molecule, mitochondrion, hepatocyte, erythrocyte, heart, head, blood, urine, peritoneal cavity, diaphragmatic surface of heart, inferior margin of liver, apex of lung.</fma:definition>
+        <fma:non-English_equivalent>Entidad anatómica física</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Entité anatomique physique</fma:non-English_equivalent>
+        <fma:preferred_name>Physical anatomical entity</fma:preferred_name>
+        <rdfs:label xml:lang="en">Physical anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma61775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Entidad anatómica física</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:12:00 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma61775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Entité anatomique physique</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Feb 04 16:33:47 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma61775"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Physical anatomical entity</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Nov 20 13:34:47 PST 2003</fma:Date_entered_modified>
+        <fma:author>Jose Mejino, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma62955 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma62955">
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">62955</fma:FMAID>
+        <fma:definition>Organismal continuant entity which is enclosed by the bona fide boundary of an organism or is an attribute of its structural organization. Examples: cell, heart, head, peritoneal cavity, apex of lung, anatomical term, sagittal plane.</fma:definition>
+        <fma:non-English_equivalent>Entité anatomique</fma:non-English_equivalent>
+        <fma:preferred_name>Anatomical entity</fma:preferred_name>
+        <rdfs:label xml:lang="en">Anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma62955"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Entité anatomique</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Dec 09 10:17:53 GMT-08:00 2004</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma62955"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Anatomical entity</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed Sep 15 17:06:24 GMT-08:00 2004</fma:Date_entered_modified>
+        <fma:author>Jose Mejino, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:term_status>Legitimate</fma:term_status>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma67135 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma67135">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma305751"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67135</fma:FMAID>
+        <fma:definition>Anatomical structure present after birth.</fma:definition>
+        <fma:non-English_equivalent>Struttura anatomica</fma:non-English_equivalent>
+        <fma:preferred_name>Postnatal anatomical structure</fma:preferred_name>
+        <rdfs:label xml:lang="en">Postnatal anatomical structure</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67135"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Struttura anatomica</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:21:04 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Italian</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67135"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Postnatal anatomical structure</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Aug 28 16:39:38 PDT 2001</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma67165 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma67165">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma61775"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67165</fma:FMAID>
+        <fma:definition>Physical anatomical entity, each instance of which has mass. Examples: hemoglobin molecule, mitochondrion, hepatocyte, erythrocyte, heart, head, blood, urine.</fma:definition>
+        <fma:non-English_equivalent>Entidad anatómica física material</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Entità anatomica fisica materiale</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Entité anatomique physique matériel</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Materielles körperliches anatomisches Wesen</fma:non-English_equivalent>
+        <fma:preferred_name>Material anatomical entity</fma:preferred_name>
+        <rdfs:label xml:lang="en">Material anatomical entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67165"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Entidad anatómica física material</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:07:34 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67165"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Entità anatomica fisica materiale</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:22:13 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Italian</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67165"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Entité anatomique physique matériel</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Mar 03 15:26:22 PST 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67165"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Materielles körperliches anatomisches Wesen</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:13:22 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67165"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Material anatomical entity</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Aug 17 16:59:15 PDT 2004</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma67504 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma67504">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma67135"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67504</fma:FMAID>
+        <fma:definition>anatomical structure, each instance of which is a regional part of some cardinal body part; it has as its constitutional part some subdivision of the integument, such that for each instance of cardinal body part the meronymic sum of its cardinal subdivisions constitutes the instance of cardinal body part. Examples: thorax, perineum, back of neck, forearm, hand, phalanx, nose, auricle of ear, scrotum.</fma:definition>
+        <fma:non-English_equivalent>Subdivisión de la pieza de cuerpo principal</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Suddivisione della parte di corpo principale</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Unterteilung des Hauptkörperteils</fma:non-English_equivalent>
+        <fma:preferred_name>Subdivision of cardinal body part</fma:preferred_name>
+        <fma:synonym>Principal body part subdivision</fma:synonym>
+        <rdfs:comment>Old definition (retires 03-31-2017):
+Anatomical structure, which is a subdivision of a cardinal body part; it may exclude bones; is demarcated from other subdivisions of the same cardinal body part by anatomical surfaces or lines or topographical references; together with other contiguous subdivisions of the same cardinal body part, it constitutes a cardinal body part.</rdfs:comment>
+        <rdfs:label xml:lang="en">Subdivision of cardinal body part</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67504"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Subdivisión de la pieza de cuerpo principal</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:08:37 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67504"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Suddivisione della parte di corpo principale</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:23:21 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Italian</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67504"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Unterteilung des Hauptkörperteils</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:15:43 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67504"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Subdivision of cardinal body part</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Dec 17 18:41:01 GMT-08:00 2004</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma67504"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Principal body part subdivision</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:33 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma7153 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma7153">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma67135"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7153</fma:FMAID>
+        <fma:definition>anatomical structure, each instance of which has as its constitutional part some subdivision of the skeleton, and some subdivision of integument,
+such that the meronymic sum of an individual’s cardinal body parts constitutes the individual’s entire body. Examples: head, limb
+</fma:definition>
+        <fma:non-English_equivalent>Hauptkörperteil</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Pars corporis</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Parte di corpo principale</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Pieza de cuerpo principal</fma:non-English_equivalent>
+        <fma:preferred_name>Cardinal body part</fma:preferred_name>
+        <fma:synonym>Body region</fma:synonym>
+        <rdfs:comment>Old definition (retired 03-31-2017):
+Anatomical structure which has as its direct parts instances of anatomical sets of organs and cardinal organ parts spatially associated with either axial or appendicular skeleton; in their aggregate are surrounded by part of skin. Example: head</rdfs:comment>
+        <rdfs:label xml:lang="en">Cardinal body part</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7153"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Hauptkörperteil</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:15:27 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7153"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Pars corporis</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Oct 04 13:57:01 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7153"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Parte di corpo principale</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:23:02 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Italian</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7153"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Pieza de cuerpo principal</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 18:08:24 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7153"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Cardinal body part</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:59 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Cornelius Rosse</fma:authority>
+        <fma:modification>May  1 1996  1:14:46:603PM</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7153"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Body region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:17 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma7154 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma7154">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma7153"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7154</fma:FMAID>
+        <fma:definition>cardinal body part, each instance of which has as its constitutional part some skull. Examples: There is only one head.</fma:definition>
+        <fma:non-English_equivalent>Cabeza</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Caput</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Chef ou tête</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Kopf</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Tête</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Ulo</fma:non-English_equivalent>
+        <fma:preferred_name>Head</fma:preferred_name>
+        <rdfs:comment>Old definition (retired 03-31-2017):
+Cardinal body part, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with the skull, it is partially surrounded by skin of head. </rdfs:comment>
+        <rdfs:label xml:lang="en">Head</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7154"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Cabeza</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:42:49 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7154"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Caput</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed Aug 18 14:29:11 PDT 2004</fma:Date_entered_modified>
+        <fma:English_equivalent>Head</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.001</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+        <fma:modification>Tue Mar 16 11:02:49 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7154"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Chef ou tête</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 12:37:52 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7154"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Kopf</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 12:43:32 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7154"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Tête</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 12:42:40 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7154"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Ulo</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 15:58:02 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Filipino</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma7154"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Head</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Aug 31 15:21:22 PDT 2004</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.001</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>May  1 1996  1:14:41:233PM</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma78541 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma78541">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma55652"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78541</fma:FMAID>
+        <fma:preferred_name>Set of subdivisions of cardinal body part</fma:preferred_name>
+        <fma:synonym>Body part subdivisions set</fma:synonym>
+        <rdfs:label xml:lang="en">Set of subdivisions of cardinal body part</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma78541"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Set of subdivisions of cardinal body part</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:43 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma78541"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Body part subdivisions set</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:47 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma9661 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma9661">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma67504"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9661</fma:FMAID>
+        <fma:definition>Subdivision of cardinal body part which has as its direct part either upper or lower appendicular skeleton.</fma:definition>
+        <fma:preferred_name>Limb region</fma:preferred_name>
+        <fma:synonym>Limb segment</fma:synonym>
+        <fma:synonym>Region of limb</fma:synonym>
+        <fma:synonym>Segment of limb</fma:synonym>
+        <fma:synonym>Subdivision of limb</fma:synonym>
+        <rdfs:label xml:lang="en">Limb region</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9661"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Limb region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9661"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Limb segment</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Cornelius Rosse</fma:authority>
+        <fma:modification>Tue Mar 16 11:40:21 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9661"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Region of limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9661"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Segment of limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Cornelius Rosse</fma:authority>
+        <fma:modification>Jul 30 1996  1:56:16:443PM</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9661"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Subdivision of limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Tue Mar 16 11:40:17 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma9663 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma9663">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma0329072"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9663</fma:FMAID>
+        <fma:non-English_equivalent>Antebrachium</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Antebrazo</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Avant-bras</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Regio antebrachialis</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Région de l&apos;avant-bras</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Unterarm</fma:non-English_equivalent>
+        <fma:preferred_name>Forearm</fma:preferred_name>
+        <fma:synonym>Antebrachial region</fma:synonym>
+        <fma:synonym>Intermediate segment of free upper limb</fma:synonym>
+        <rdfs:label xml:lang="en">Forearm</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Antebrachium</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Forearm</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.024</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Antebrazo</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 16:04:47 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Avant-bras</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Regio antebrachialis</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Antebrachial region</fma:English_equivalent>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Région de l&apos;avant-bras</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Unterarm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:48:18 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Forearm</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.024</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Cornelius Rosse</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Jul 30 1996  2:00:16:156PM</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Antebrachial region</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:16 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9663"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Intermediate segment of free upper limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue May 27 17:13:19 PDT 2003</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma9664 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma9664">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma0329094"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9664</fma:FMAID>
+        <fma:non-English_equivalent>Fuß</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Paa</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Pes</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Pie</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Pied</fma:non-English_equivalent>
+        <fma:preferred_name>Foot</fma:preferred_name>
+        <fma:synonym>Terminal segment of free lower limb</fma:synonym>
+        <rdfs:label xml:lang="en">Foot</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9664"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Fuß</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:49:44 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9664"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Paa</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 16:04:58 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Filipino</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9664"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Pes</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:26:18 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Foot</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.040</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9664"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Pie</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 16:05:48 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9664"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Pied</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9664"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Foot</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.040</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Cornelius Rosse</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Jul 30 1996  2:01:56:523PM</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9664"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Terminal segment of free lower limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue May 27 17:14:51 PDT 2003</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma9665 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma9665">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma24877"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9665</fma:FMAID>
+        <fma:non-English_equivalent>Caviglia</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Knöchel</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Tarsus</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Tobillo</fma:non-English_equivalent>
+        <fma:preferred_name>Ankle</fma:preferred_name>
+        <rdfs:label xml:lang="en">Ankle</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9665"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Caviglia</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 15:49:04 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Italian</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9665"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Knöchel</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 15:53:00 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>German</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9665"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Tarsus</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Ankle</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.041</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Nomina Anatomica</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+        <fma:modification>Jul 30 1996  2:02:51:720PM</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9665"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Tobillo</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 16:15:02 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9665"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Ankle</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.041</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Jul 30 1996  2:02:47:506PM</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma9712 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma9712">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma0329033"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9712</fma:FMAID>
+        <fma:definition>Distal free upper limb region, each instance of which consists of some carpus, metacarpus and set of digits.</fma:definition>
+        <fma:non-English_equivalent>Kamay</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Main</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Mano</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Manus</fma:non-English_equivalent>
+        <fma:preferred_name>Hand</fma:preferred_name>
+        <fma:synonym>Terminal segment of free upper limb</fma:synonym>
+        <rdfs:label xml:lang="en">Hand</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9712"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Kamay</owl:annotatedTarget>
+        <fma:Date_entered_modified>Wed May 04 16:04:43 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Filipino</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9712"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Main</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:44 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9712"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Mano</owl:annotatedTarget>
+        <fma:Date_entered_modified>Fri Apr 29 16:05:24 PDT 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>Spanish</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9712"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Manus</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:43 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:English_equivalent>Hand</fma:English_equivalent>
+        <fma:TA_ID>A01.1.00.025</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+        <fma:modification>Wed Mar 24 16:30:08 PST 1999</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9712"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Hand</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:43 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A01.1.00.025</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Cornelius Rosse</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:modification>Aug  2 1996 10:43:59:650AM</fma:modification>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9712"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Terminal segment of free upper limb</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue May 27 17:14:25 PDT 2003</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma9713 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma9713">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma9712"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9713</fma:FMAID>
+        <fma:preferred_name>Right hand</fma:preferred_name>
+        <rdfs:label xml:lang="en">Right hand</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9713"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Right hand</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:43 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Aug  2 1996 10:45:35:313AM</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma9714 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma9714">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma9712"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9714</fma:FMAID>
+        <fma:preferred_name>Left hand</fma:preferred_name>
+        <rdfs:label xml:lang="en">Left hand</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma9714"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Left hand</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:33:43 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Aug  2 1996 10:46:33:016AM</fma:modification>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+

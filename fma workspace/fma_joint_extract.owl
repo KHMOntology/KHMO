@@ -1,0 +1,674 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/sig/ont/fma.owl#"
+     xml:base="http://purl.org/sig/ont/fma.owl"
+     xmlns:fma="http://purl.org/sig/ont/fma/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/sig/ont/fma.owl">
+        <fma:contributing_author>Augusto V. Agoncillo MD</fma:contributing_author>
+        <fma:contributing_author>Richard Martin PhD</fma:contributing_author>
+        <fma:contributing_author>Salvacion Quimosing MD</fma:contributing_author>
+        <fma:creator>Cornelius Rosse, MD DSc</fma:creator>
+        <fma:primary_author_and_curator>Jose Leonardo V. Mejino Jr. MD</fma:primary_author_and_curator>
+        <fma:technical_support>James F Brinkley MD PhD
+Linda Shapiro PhD
+Landon T Detwiler MS
+Kurt Rickard PhD
+</fma:technical_support>
+        <rdfs:comment>The Foundational Model of Anatomy Ontology (FMA) is a project of the Structural Informatics Group from the Department of Biological Structure at the University of Washington (UW) School of Medicine. The FMA is an intellectual property of the University of Washington. The FMA is a reference ontology for the domain of human anatomy.</rdfs:comment>
+        <rdfs:comment>Object properties migrated from frames version retained the previously assigned FMAIDs. Newly introduced object properties post OWL-translation are no longer assigned FMAIDs.</rdfs:comment>
+        <owl:versionInfo>5.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/Date_entered_modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/Date_entered_modified"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/FMAID -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/FMAID"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/TA_ID -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/TA_ID"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/author -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/author"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/authority -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/authority"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/contributing_author -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/contributing_author"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/creator"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/definition -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/definition"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/language"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/modification -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/modification"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/non-English_equivalent -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/preferred_name -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/preferred_name"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/primary_author_and_curator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/primary_author_and_curator"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/synonym -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/synonym"/>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/technical_support -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/sig/ont/fma/technical_support"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/has_dimension -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/sig/ont/fma/has_dimension">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <fma:FMAID>85912</fma:FMAID>
+        <rdfs:label xml:lang="en">has dimension</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma23139 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23139">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma85817"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23139</fma:FMAID>
+        <fma:preferred_name>Joint movement</fma:preferred_name>
+        <rdfs:label xml:lang="en">Joint movement</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Joint movement</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:39 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma23861 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23861">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23861</fma:FMAID>
+        <fma:preferred_name>Flexion</fma:preferred_name>
+        <rdfs:label xml:lang="en">Flexion</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma23861"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Flexion</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:39 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A03.0.00.058</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma23862 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23862">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23862</fma:FMAID>
+        <fma:preferred_name>Extension</fma:preferred_name>
+        <rdfs:label xml:lang="en">Extension</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma23862"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Extension</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:47 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma23863 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23863">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23863</fma:FMAID>
+        <fma:preferred_name>Abduction</fma:preferred_name>
+        <rdfs:label xml:lang="en">Abduction</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma23863"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Abduction</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:28:17 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A03.0.00.053</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma23864 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23864">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23864</fma:FMAID>
+        <fma:preferred_name>Adduction</fma:preferred_name>
+        <rdfs:label xml:lang="en">Adduction</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma23864"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Adduction</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:47 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma23865 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23865">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23865</fma:FMAID>
+        <fma:preferred_name>Rotation</fma:preferred_name>
+        <rdfs:label xml:lang="en">Rotation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma23865"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Rotation</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:39 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma23866 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23866">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23866</fma:FMAID>
+        <fma:preferred_name>Circumduction</fma:preferred_name>
+        <rdfs:label xml:lang="en">Circumduction</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma23866"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Circumduction</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:39 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A03.0.00.057</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma23867 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23867">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma85817"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23867</fma:FMAID>
+        <fma:preferred_name>Muscle action</fma:preferred_name>
+        <rdfs:label xml:lang="en">Muscle action</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma23867"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Muscle action</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Feb 22 13:31:48 PST 2001</fma:Date_entered_modified>
+        <fma:author>AUGUSTO V. AGONCILLO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Mar 10 09:17:13 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma23873 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma23873">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23867"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23873</fma:FMAID>
+        <fma:preferred_name>Stabilizer</fma:preferred_name>
+        <rdfs:label xml:lang="en">Stabilizer</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma23873"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Stabilizer</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu Aug 30 14:07:21 PDT 2001</fma:Date_entered_modified>
+        <fma:author>AUGUSTO V. AGONCILLO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Wed Mar 10 09:18:31 PST 1999</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma32432 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma32432">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23865"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32432</fma:FMAID>
+        <fma:non-English_equivalent>Endorotatio</fma:non-English_equivalent>
+        <fma:non-English_equivalent>Rotation médiale</fma:non-English_equivalent>
+        <fma:preferred_name>Medial rotation</fma:preferred_name>
+        <fma:synonym>Internal rotation</fma:synonym>
+        <rdfs:label xml:lang="en">Medial rotation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma32432"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Endorotatio</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:05 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A03.0.00.056</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>Latin</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma32432"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/non-English_equivalent"/>
+        <owl:annotatedTarget>Rotation médiale</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:24:41 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Robert Baud, PhD</fma:authority>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>French</fma:language>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma32432"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Medial rotation</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:39 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A03.0.00.056</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma32432"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/synonym"/>
+        <owl:annotatedTarget>Internal rotation</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:27:12 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:TA_ID>A03.0.00.056</fma:TA_ID>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:authority>Terminologia Anatomica 1998</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma32433 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma32433">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32433</fma:FMAID>
+        <fma:preferred_name>Pronation</fma:preferred_name>
+        <rdfs:label xml:lang="en">Pronation</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma32433"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Pronation</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:47 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma32434 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma32434">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32434</fma:FMAID>
+        <fma:preferred_name>Supination</fma:preferred_name>
+        <rdfs:label xml:lang="en">Supination</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma32434"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Supination</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:47 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma32435 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma32435">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32435</fma:FMAID>
+        <fma:preferred_name>Opposition</fma:preferred_name>
+        <rdfs:label xml:lang="en">Opposition</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma32435"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Opposition</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:47 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma32436 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma32436">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma23139"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32436</fma:FMAID>
+        <fma:preferred_name>Reposition</fma:preferred_name>
+        <rdfs:label xml:lang="en">Reposition</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma32436"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Reposition</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:25:47 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma50713 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma50713">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma85817"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50713</fma:FMAID>
+        <fma:definition>Anatomical relationship which describes the gestational, maturational and involutional relationships between physical anatomical entities. Examples: embryological development, involution, maturation.</fma:definition>
+        <fma:preferred_name>Anatomical transformation relationship</fma:preferred_name>
+        <rdfs:label xml:lang="en">Anatomical transformation relationship</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma50713"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Anatomical transformation relationship</owl:annotatedTarget>
+        <fma:Date_entered_modified>Thu May 12 14:30:14 GMT-08:00 2005</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:modification>Mon Mar 13 06:12:08 PST 2000</fma:modification>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma85817 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma85817">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/sig/ont/fma/has_dimension"/>
+                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85817</fma:FMAID>
+        <fma:definition>Organismal entity which is enclosed by the bona fide boundary of an organism or is an attribute of its structural organization during gestational and maturational development and senescence.</fma:definition>
+        <fma:preferred_name>Anatomical transformation entity</fma:preferred_name>
+        <rdfs:label xml:lang="en">Anatomical transformation entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma85817"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Anatomical transformation entity</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Jul 17 13:03:01 PDT 2007</fma:Date_entered_modified>
+        <fma:author>JOSE MEJINO, MD</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/sig/ont/fma/fma85818 -->
+
+    <owl:Class rdf:about="http://purl.org/sig/ont/fma/fma85818">
+        <rdfs:subClassOf rdf:resource="http://purl.org/sig/ont/fma/fma85817"/>
+        <fma:FMAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">85818</fma:FMAID>
+        <fma:definition>Developmental entity is an anatomical transformation entity which forms the whole or a part of, or is an attribute of, the structural organization of an organism during its gestational development.</fma:definition>
+        <fma:preferred_name>Developmental entity</fma:preferred_name>
+        <rdfs:label xml:lang="en">Developmental entity</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.org/sig/ont/fma/fma85818"/>
+        <owl:annotatedProperty rdf:resource="http://purl.org/sig/ont/fma/preferred_name"/>
+        <owl:annotatedTarget>Developmental entity</owl:annotatedTarget>
+        <fma:Date_entered_modified>Tue Jul 17 13:03:52 PDT 2007</fma:Date_entered_modified>
+        <fma:author>detwiler</fma:author>
+        <fma:authority>Rosse MD</fma:authority>
+        <fma:language>English</fma:language>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma23139"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma23867"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma50713"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma85818"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma23861"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma23862"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma23863"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma23864"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma23865"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma23866"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma32433"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma32434"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma32435"/>
+            <rdf:Description rdf:about="http://purl.org/sig/ont/fma/fma32436"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+

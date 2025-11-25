@@ -1,0 +1,15 @@
+#SCRIPTS
+
+//this is better - Joint movements
+robot extract --method STAR --input "fma.owl" -t "http://purl.org/sig/ont/fma/fma85817" -t "http://purl.org/sig/ont/fma/fma23139" -t "http://purl.org/sig/ont/fma/fma32432" -t "http://purl.org/sig/ont/fma/fma23864" --intermediates all --copy-ontology-annotations true --imports include -o fma_joint_extract.owl -vv
+
+//final - parts
+robot extract --method MIREOT --input "fma.owl" -u "http://purl.org/sig/ont/fma/fma62955" -L "parts.txt" --intermediates all --copy-ontology-annotations true --imports include -o fma_parts_extract.owl -vv
+
+
+//final - muscles (July 2024)
+robot extract --method MIREOT --input "fma.owl" -u "http://purl.org/sig/ont/fma/fma62955" -l "http://purl.org/sig/ont/fma/fma5022" -l "http://purl.org/sig/ont/fma/fma32558" --branch-from-term "http://purl.org/sig/ont/fma/fma5022" --branch-from-term "http://purl.org/sig/ont/fma/fma32558" --intermediates all --copy-ontology-annotations true --imports include --individuals definitions -o fma_muscle_extract.owl -vv
+
+------
+
+robot merge --inputs "*_extract.owl" -o fma_khmo.owl --include-annotations true 

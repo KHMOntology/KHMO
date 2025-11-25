@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="http://purl.obolibrary.org/obo/nbo-extract.owl" uri="nbo%20workspace/nbo_khmo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="http://purl.obolibrary.org/obo/obi-extract.owl" uri="obi%20workspace/obi_khmo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://purl.org/sig/ont/fma.owl" uri="fma%20workspace/fma_khmo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://purl.org/sig/ont/fma.owl" uri="fma%20workspace/fma_movement_tree_extract.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://purl.org/sig/ont/fma.owl" uri="fma%20workspace/fma_muscle_extract.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://purl.org/sig/ont/fma.owl" uri="fma%20workspace/fma_extract.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://purl.org/sig/ont/fma.owl" uri="fma%20workspace/fma_parts_extract.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://purl.org/sig/ont/fma.owl" uri="fma%20workspace/fma_joint_extract.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="prelim/freestyle.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="prelim/butterfly.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="prelim/leg-lifts.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="prelim/sidestroke.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="prelim/flutter-kicking.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="prelim/treading-water.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="prelim/deepwater-running.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="prelim/backstroke.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://utmb.edu/ontology/khmo.owl" uri="prelim/breaststroke.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://w3id.org/khmo" uri="khmo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1760977768122" name="duplicate:http://w3id.org/khmo" uri="khmo-merged.owl"/>
+    </group>
+</catalog>

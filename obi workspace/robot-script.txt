@@ -1,0 +1,6 @@
+robot extract --method STAR -i "obi.owl" -t "http://purl.obolibrary.org/obo/OBI_0000011" --intermediates none --copy-ontology-annotations true --imports include -o obi_pp_extract.owl -vv
+
+
+robot extract --method MIREOT -i "obi.owl" -l "http://purl.obolibrary.org/obo/OBI_0000011" -u "http://purl.obolibrary.org/obo/BFO_0000001" --intermediates all --copy-ontology-annotations true --imports include -o obi_pph_extract.owl -vv
+
+robot merge --input "obi_pph_extract.owl" --input "obi_pp_extract.owl" -o obi_khmo.owl --include-annotations true
