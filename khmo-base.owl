@@ -20,9 +20,9 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://w3id.org/khmo">
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/ProfTuan/KHMO/main/fma%20workspace/fma_khmo.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/ProfTuan/KHMO/main/nbo%20workspace/nbo_khmo.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/ProfTuan/KHMO/main/obi%20workspace/obi_khmo.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/KHMOntology/KHMO/main/fma%20workspace/fma_khmo.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/KHMOntology/KHMO/main/nbo%20workspace/nbo_khmo.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/KHMOntology/KHMO/main/obi%20workspace/obi_khmo.owl"/>
         <dc:creator>Eloisa Nguyen</dc:creator>
         <dc:creator>Tuan Amith</dc:creator>
         <dc:title>Kinentic Human Movement Ontology (KHMO)</dc:title>
