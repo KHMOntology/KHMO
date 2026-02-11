@@ -35,6 +35,9 @@ Use [Protege](https://protege.stanford.edu/) to view by importing or opening KHM
 
 Under the "Ontology Imports" tab click the "+" button for Direct Imports and use the provided PURL.
 
+### Issues
+
+Submit an issue [here](https://github.com/KHMOntology/KHMO/issues)
 
 ## Developers and contributors
 
