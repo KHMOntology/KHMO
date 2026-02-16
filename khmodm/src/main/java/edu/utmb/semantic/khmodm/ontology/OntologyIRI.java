@@ -12,6 +12,8 @@ import org.semanticweb.owlapi.model.IRI;
  */
 public class OntologyIRI {
     
+    private String base_namespace = "http://w3id.org/khmo";
+    
     //
     static private OntologyIRI INSTANCE = null;
         
@@ -28,8 +30,18 @@ public class OntologyIRI {
     private IRI _INVOLVED_IN = null;
     private IRI _PRECEDES = null;
     private IRI _PARTICIPATES_IN = null;
+    private IRI _CASUALLY_UPSTREAM_OF = null;
+    private IRI _ENABLES = null;
     
     private IRI _IMAGE = null;
+    
+    
+    public IRI ENABLES(){
+        if(this._ENABLES == null)
+            this._ENABLES = IRI.create("http://purl.obolibrary.org/obo/RO_0002327");
+        
+        return this._ENABLES;
+    }
     
     public IRI PARTICIPATES_IN(){
         
@@ -60,16 +72,25 @@ public class OntologyIRI {
         return this._PART_OF;
     }
     
+    public IRI CASUALLY_UPSTREM_OF(){
+        
+        if(this._CASUALLY_UPSTREAM_OF == null)
+            this._CASUALLY_UPSTREAM_OF = IRI.create("http://purl.obolibrary.org/obo/RO_0002418");
+            
+        
+        return this._CASUALLY_UPSTREAM_OF;
+    }
+    
     public IRI HUMAN_KINETIC_MOVEMENT(){
         if(this._HUMAN_KINETIC_MOVEMENT == null)
-            this._HUMAN_KINETIC_MOVEMENT = IRI.create("http://utmb.edu/ontology/khmo.owl#KHMO_00000001");
+            this._HUMAN_KINETIC_MOVEMENT = IRI.create(base_namespace +"#KHMO_00000001");
         
         return this._HUMAN_KINETIC_MOVEMENT;
     }
     
     public IRI HUMAN_STANCE(){
         if(this._HUMAN_STANCE == null)
-            this._HUMAN_STANCE = IRI.create("http://utmb.edu/ontology/khmo.owl#KHMO_00000002");
+            this._HUMAN_STANCE = IRI.create(base_namespace + "#KHMO_00000002");
         
         return this._HUMAN_STANCE;
     }
@@ -109,12 +130,13 @@ public class OntologyIRI {
     public IRI KHMO(){
         
         if(KHMO_IRI == null){
-            KHMO_IRI = IRI.create("https://raw.githubusercontent.com/ProfTuan/KHMO/main/khmo.owl");
+            KHMO_IRI = IRI.create(base_namespace);
         }
 
         return KHMO_IRI;
     }
     
+    /*
     public IRI KHMO_MERGED(){
         if(KHMO_MERGED_IRI == null){
             KHMO_MERGED_IRI = IRI.create("https://raw.githubusercontent.com/ProfTuan/KHMO/main/khmo-merged.owl");
@@ -122,5 +144,5 @@ public class OntologyIRI {
         
         return KHMO_MERGED_IRI;
     }
-    
+    */
 }

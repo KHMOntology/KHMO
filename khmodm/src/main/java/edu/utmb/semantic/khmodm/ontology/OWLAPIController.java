@@ -54,6 +54,14 @@ public class OWLAPIController {
         
     }
     
+    public void reset(){
+        manager = null;
+        ontology = null;
+        factory = null;
+        
+        INSTANCE = null;
+    }
+    
     static public OWLAPIController getInstance (){
         if(INSTANCE == null){
             INSTANCE = new OWLAPIController();
@@ -139,7 +147,7 @@ public class OWLAPIController {
                 if( value instanceof OWLLiteral){
                     String literal = ((OWLLiteral) value).getLiteral();
                     
-                    if(literal.equalsIgnoreCase(term)){
+                    if(literal.trim().equalsIgnoreCase(term.trim())){
                         //System.out.println("found it");
                         
                         //target_class =  owlclass;
@@ -203,9 +211,11 @@ public class OWLAPIController {
         
         this.addNewClassInstance(movement_class, movement_instance, movement_label);
         
-        OWLObjectProperty part_of = factory.getOWLObjectProperty(OntologyIRI.getInstance().PART_OF());
+        //OWLObjectProperty part_of = factory.getOWLObjectProperty(OntologyIRI.getInstance().PART_OF());
         
-        OWLObjectPropertyAssertionAxiom owlObjectPropertyAssertionAxiom = factory.getOWLObjectPropertyAssertionAxiom(part_of, movement_instance, stance);
+        OWLObjectProperty upstream = factory.getOWLObjectProperty(OntologyIRI.getInstance().CASUALLY_UPSTREM_OF());
+        
+        OWLObjectPropertyAssertionAxiom owlObjectPropertyAssertionAxiom = factory.getOWLObjectPropertyAssertionAxiom(upstream, movement_instance, stance);
         
         this.manager.applyChange(new AddAxiom(ontology,owlObjectPropertyAssertionAxiom));
         
@@ -222,9 +232,10 @@ public class OWLAPIController {
        
        this.addNewClassInstance(body_class, body_instance, body_label);
        
-        OWLObjectProperty involved_in = factory.getOWLObjectProperty(OntologyIRI.getInstance().INVOLVED_IN());
+        //OWLObjectProperty involved_in = factory.getOWLObjectProperty(OntologyIRI.getInstance().INVOLVED_IN());
+        OWLObjectProperty enables = factory.getOWLObjectProperty(OntologyIRI.getInstance().ENABLES());
         
-        OWLObjectPropertyAssertionAxiom owlObjectPropertyAssertionAxiom = factory.getOWLObjectPropertyAssertionAxiom(involved_in, body_instance, stance);
+        OWLObjectPropertyAssertionAxiom owlObjectPropertyAssertionAxiom = factory.getOWLObjectPropertyAssertionAxiom(enables, body_instance, stance);
         
         this.manager.applyChange(new AddAxiom(ontology,owlObjectPropertyAssertionAxiom));
         
@@ -294,7 +305,7 @@ public class OWLAPIController {
     public static void main(String[] args) {
         OWLAPIController instance = OWLAPIController.getInstance();
         
-        instance.setOntology(OntologyIRI.getInstance().KHMO_MERGED());
+        instance.setOntology(OntologyIRI.getInstance().KHMO());
         
         String iri = instance.getIRIFromLabel("left forearm");
         System.out.println(iri);

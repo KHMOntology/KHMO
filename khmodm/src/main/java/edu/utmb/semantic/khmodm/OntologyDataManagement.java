@@ -6,6 +6,8 @@ import edu.utmb.semantic.khmodm.model.MovementModel;
 import edu.utmb.semantic.khmodm.model.StanceModel;
 import edu.utmb.semantic.khmodm.ontology.OWLAPIController;
 import edu.utmb.semantic.khmodm.ontology.OntologyIRI;
+import edu.utmb.semantic.khmodm.util.AnatomyNormalization;
+import edu.utmb.semantic.khmodm.util.PhysioNormalization;
 import java.io.File;
 import java.io.IOException;
 import java.util.HashSet;
@@ -38,10 +40,12 @@ public class OntologyDataManagement
         
         this.owlapi = OWLAPIController.getInstance();
         
-        owlapi.setOntology(OntologyIRI.getInstance().KHMO_MERGED());
+        owlapi.setOntology(OntologyIRI.getInstance().KHMO());
     }
     
-    
+    public void refresh(){
+        OWLAPIController.getInstance().reset();
+    }
     
     private OWLNamedIndividual createStanceInstance(StanceModel stance){
         
@@ -75,6 +79,11 @@ public class OntologyDataManagement
         for(String body : stance.getRelevant_body_parts()){
             //String body_instance_id = IDGenerator.getInstance().getGeneratedIdentifier();
             //get IRI of body part
+            
+            //Inject normalization
+            String normalized = AnatomyNormalization.getInstance().getNormalized(body);
+            if(!normalized.isBlank() || !normalized.isEmpty()) body = normalized;
+            
             String body_iri = owlapi.getIRIFromLabel(body);
             
             if(body_iri.isEmpty()){
@@ -99,6 +108,10 @@ public class OntologyDataManagement
         
         
         for(String phy : stance.getBody_vocabularies()){
+            
+            //Inject normalization
+            String normalized = PhysioNormalization.getInstance().getNormalized(phy);
+            if(!normalized.isBlank() || !normalized.isEmpty()) phy = normalized;
             
             String phy_iri = owlapi.getIRIFromLabel(phy);
             
@@ -180,7 +193,7 @@ public class OntologyDataManagement
         
         try {
             if(this.printout)
-                FileUtils.writeStringToFile(new File("uncovered_term_logs.csv"), uncovered_terms.toString(), true);
+                FileUtils.writeStringToFile(new File("uncovered_term_logs.csv"), uncovered_terms.toString().toLowerCase(), true);
         } catch (IOException ex) {
             Logger.getLogger(OntologyDataManagement.class.getName()).log(Level.SEVERE, null, ex);
         }

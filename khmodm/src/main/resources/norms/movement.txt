@@ -1,0 +1,7 @@
+stabilization,Stabilizer
+plantarflexion,Flexion
+dorsiflexion,Flexion
+contraction,Muscle action
+protonation,Pronation
+relaxation,Muscle action
+platntarflexion,Flexion

@@ -314,7 +314,7 @@ public class ImportMovementData {
         return null;
     }
     public static void main(String[] args) {
-        
+        /*
         ImportMovementData td = new ImportMovementData("tai chi v5-import draft.xlsx");
         try {
             td.readData();
@@ -323,6 +323,7 @@ public class ImportMovementData {
         } catch (IOException ex) {
             Logger.getLogger(ImportMovementData.class.getName()).log(Level.SEVERE, null, ex);
         }
+        */
     }
     
 }

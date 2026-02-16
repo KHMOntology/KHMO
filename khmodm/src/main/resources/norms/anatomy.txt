@@ -1,0 +1,40 @@
+quadriceps,muscle of thigh
+hamstrings,set of hamstring muscles
+obliques,Muscle of anterior abdominal wall
+iliopsoas,muscle of thigh
+deltoids,deltoid
+hip flexors,muscle of lower limb
+hip abductors,gluteal muscle
+adductor longue,Musculature of hip
+adductor longus,Musculature of hip
+clavicular portion of the pectoralis major-dominated,Pectoralis major
+gleutus maximus,Musculature of buttock
+lastissimus dorsi,Latissimus dorsi
+protonator teres,Pronator teres
+rotator cuff,Set of rotator cuff muscles
+grastrocnemius,Gastrocnemius
+grastronemius,Gastrocnemius
+rectus abdomonis,Rectus abdominis
+bicep brachii,Biceps brachii
+abdomonis,Rectus abdominis
+clavicular portion of the pectoralis major,Pectoralis major
+hips,Musculature of hip
+knees,Knee
+ankles,Ankle
+gastrocnemiusl soleus,Superficial muscle of posterior compartment of leg
+gletus maximus,Musculature of buttock
+tibilialis anterior,Tibialis anterior
+paraspinal muscles,Muscle of back
+adductor muscles,Muscle of medial compartment of thigh
+calf muscles,Superficial muscle of posterior compartment of leg
+wrist flexors,Muscle of forearm
+abdominis,Muscle of abdominal part of trunk
+vastus,Muscle of anterior compartment of thigh
+lateralis,Vastus lateralis
+feet,Muscle of foot
+trunk,Musculature of trunk
+tesnsor fascia latate,Tensor fasciae latae
+erector spinae,Erector spinae muscle group
+hip,Musculature of hip
+pelvis,Musculature of pelvis
+trrapezius,Trapezius

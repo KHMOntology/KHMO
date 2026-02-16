@@ -56,7 +56,7 @@ public class SimilarityCheck {
         
         JaroWinkler jarowink = new JaroWinkler();
         
-        score = jarowink.similarity(term1, term2);
+        score = jarowink.similarity(term1.toLowerCase().trim(), term2.toLowerCase().trim());
         
         return score;
     }
