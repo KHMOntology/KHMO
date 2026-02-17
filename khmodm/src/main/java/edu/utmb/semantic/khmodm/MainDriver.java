@@ -21,11 +21,7 @@ public class MainDriver {
         SwimDatasetAccess swim_dataset = new SwimDatasetAccess();
         Set<ImmutablePair<String, String>> swim_data = swim_dataset.getSwimDataFiles();
         
-        
-        
-        //ontology_manager.importTaiChiData("deepwater-running.xlsx", 0);  //sidestroke didn't work
-        //ontology_manager.createInstanceData();
-        //ontology_manager.saveOntology("deepwater-running_test_2.owl");
+
         
         swim_data.forEach(s->{
             ontology_manager = new OntologyDataManagement();
