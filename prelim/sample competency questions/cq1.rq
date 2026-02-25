@@ -1,0 +1,24 @@
+# what are all of the physiological -related motions involved in the movement?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX khmo: <http://w3id.org/khmo#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?py WHERE
+{
+	{
+		?stance_a obo:BFO_0000063 ?stance_b .
+		?py_a obo:RO_0002418 ?stance_a .
+		?py_a rdfs:label ?py.
+	}
+	UNION
+	{
+		?stance_a obo:BFO_0000063 ?stance_b .
+		?py_b obo:RO_0002418 ?stance_b .
+		?py_b rdfs:label ?py.
+	}
+
+}

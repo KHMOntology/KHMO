@@ -1,0 +1,17 @@
+# what is the sequence of the movement?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX khmo: <http://w3id.org/khmo#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT DISTINCT ?movement 
+WHERE
+{
+	?stance_a obo:BFO_0000063 ?stance_b .
+	?stance_a rdfs:label ?stance_a_label .
+	?stance_b rdfs:label ?stance_b_label .
+	BIND(CONCAT(str(?stance_a_label)," precedes ",str(?stance_b_label)) AS ?movement) .
+}

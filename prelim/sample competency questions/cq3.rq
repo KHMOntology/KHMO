@@ -1,0 +1,18 @@
+# what are the anatomical body parts that coordinate with physiological-related motion?
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX khmo: <http://w3id.org/khmo#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT  ?statement WHERE
+{
+	?ana_ obo:RO_0000056 ?py_ .
+	?py_ obo:RO_0002418 ?stance_ .
+	?ana_ rdfs:label ?ana .
+	?py_ rdfs:label ?py .
+	?stance_ rdfs:label ?stance .
+	BIND (CONCAT (str(?ana), " coordinates with ", str(?py), " at ", str(?stance)) AS ?statement  )
+}
